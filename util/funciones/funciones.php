@@ -150,6 +150,9 @@
                                   <li><a href="#">Docentes</a></li>
                                   <li class="divider"></li>
                                   <li><a href="#">Matriculas</a></li>
+                                  <li class="divider"></li>
+                                  <li><a href="matriculasPorGrupos.php">Matriculas por Grupo</a></li>
+                                  <li class="divider"></li>
                                   <li><a href="#">Notas</a></li>
                                   <li><a href="#">Actas</a></li>
                                 </ul>

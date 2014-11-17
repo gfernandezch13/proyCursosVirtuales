@@ -85,5 +85,25 @@ class Matricula extends Conexion {
         
     }
     
-       
+    public function matriculasPorCurso()
+    {
+        $sql = "select c.nombre as curso, count(m.*) as nro_mat
+                from matricula m inner join grupo_academico g on (m.codigo_grupo = g.codigo_grupo)
+                inner join curso c on (c.codigo = g.codigo_curso)
+                group by c.nombre";
+
+        $resultado = $this->consultar($sql);
+
+        $respuesta = null;
+        $i = 0;
+        while ($registro = $resultado->fetchObject())
+        {
+            $i++;
+            $respuesta[$i]["curso"] = $registro->curso;
+            $respuesta[$i]["nro_mat"] = $registro->nro_mat;
+        }
+
+        return $respuesta;
+    }
+
 }
