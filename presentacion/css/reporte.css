@@ -1,0 +1,31 @@
+body
+{
+    font-family: sans-serif;
+}
+
+.titulo-reporte
+{
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    color: #000000;
+}
+
+.cabecera-reporte
+{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.cabecera-reporte-lineas
+{
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+}
+
+.cuerpo-reporte
+{
+    font-size: 12px;
+    font-weight: normal;
+    color: #000099;
+}
